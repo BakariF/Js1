@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="jour"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Dimanche";
+    break;
+  case 1:
+    day = "Lundi";
+    break;
+  case 2:
+    day = "Mardi";
+    break;
+  case 3:
+    day = "Mercredi";
+    break;
+  case 4:
+    day = "Jeudi";
+    break;
+  case 5:
+    day = "Vendredi";
+    break;
+  case  6:
+    day = "Samedi";
+}
+document.getElementById("jour").innerHTML = "aujourd'hui nous somme " + day;
+</script>
+
+</body>
+</html>
