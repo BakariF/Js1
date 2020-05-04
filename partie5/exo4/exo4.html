@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+    <meta charset="utf-8" />
+    </head>
+    <body>
+        <img id="image" onclick="changeImage();" onmouseover="biggyImage();" onmouseout="imageReset();" src="avengers.jpg" />
+        <script>
+function changeImage() {
+    document.getElementById('image').src = "leméchant.jpg";
+    
+}
+function Biggyimage() {
+    document.getElementById('image').style.height = '60%';
+    document.getElementById('image').style.width = '60%';
+}
+function imageReset() {
+    document.getElementById('image').style.height = '40%';
+    document.getElementById('image').style.width = '40%';
+}
+        </script>
+    </body>
+</html>

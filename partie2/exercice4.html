@@ -1,25 +1,24 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8" />
-        
     </head>
-
     <body>
         <script>
-            var number = prompt('une note sur 10');
-            var x = Number(number);
-            if (x == 0 || x == 1 || x == 2 || x == 3) {
-                alert("Nul");
+            var note = prompt ('Met une note'); 
+            var message = 'Ceci n\'est pas une note !'; 
+            if ((note >= 0) && (note < 4)) {
+                message = 'Nul';
+            }else if ((note >= 4) && (note <= 6)) {
+                message = 'Moyen';
+            }else if ((note > 6) && (note < 8)) {
+                message = 'Assez bien';
+            }else if ((note >= 8) && (note < 10)) {
+                message = 'Bien';
+            }else if (note == 10) {
+                message = 'Excellent';
             }
-            else if (x == 4 || x == 5 || x == 6) {
-                alert("Moyen");
-            }
-            else if (x == 8 || x == 9) {
-                alert("Bien");
-            }
-            else if (x == 10) {
-                alert("Excellent");
-            }
+            alert(message);          
         </script>
     </body>
 

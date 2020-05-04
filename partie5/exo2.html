@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+    </head>
+
+    <body>
+        <form id="signUp">
+            <div>
+            <div class="form-group">
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Mot de passe"/>
+                </li>
+            </div>
+            <div class="form-group">
+                <li>
+                    <label for="confirmPassword">Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmer le mot de passe"/>
+                </li>
+            </div>
+            </div>
+                    <button type="button" name="validate" onclick="verify()">Valider</button>
+        </form>
+
+        <script>
+              function verify() {
+                var password= document.getElementById('password'), confirmPass = document.getElementById('confirmPassword');
+                if (pass.value == confirmPass.value) {
+                    assword.setAttribute = 'border border-success'; //success pour mettre en vers bootstrap
+                    confirmPass.setAttribute = ' border border-success';
+                } else {
+                    password.setAttribute = 'border border-danger'; //danger pour mettre en rouge bootstrap
+                    confirmPass.setAttribute = ' border border-danger';
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
+<!-- 
+<!DOCTYPE html>
+    <html lang="FR">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <title>Js - partie 5 - exercice 2</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        </head>
+        <body>
+            
+            <form>
+                <div>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" name="password" id="password" />
+                </div> 
+                <div>
+                    <label for="verifPassword" id="test">Confirmation mot de passe  :</label>
+                    <input type = "password" name="verifPassword" id="verifPassword" />
+                </div>
+                <div>
+                    <button type="button" name="verify" onclick="verif()">verifier si identiques</button>
+                </div>
+            </form>
+            <script>
+                function verif() {
+                    var password = document.getElementById('password'); 
+                    var verifPassword = document.getElementById('verifPassword');
+                    
+                    if ((password.value == '') || (verifPassword.value == '')) { 
+                        alert('Erreur! vous n\'avez pas bien remplis le formulaire.');
+                    }else {
+                        if (password.value == verifPassword.value) {
+                            password.className = 'border border-success'; 
+                            verifPassword.className = 'border border-success';
+                        } else {
+                            password.className = 'border border-danger';
+                            verifPassword.className = 'border border-danger';
+                        }
+                    }
+                } 
+            </script>
+        </body>
+    </html> -->

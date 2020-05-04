@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <body>
 
 <p id="jour"></p>
@@ -7,9 +7,6 @@
 <script>
 var day;
 switch (new Date().getDay()) {
-  case 0:
-    day = "Dimanche";
-    break;
   case 1:
     day = "Lundi";
     break;
@@ -25,11 +22,46 @@ switch (new Date().getDay()) {
   case 5:
     day = "Vendredi";
     break;
-  case  6:
+  case 6:
     day = "Samedi";
+    break;
+  case  7:
+    day = "Dimanche";
 }
-document.getElementById("jour").innerHTML = "aujourd'hui nous somme " + day;
+document.getElementById("jour").innerHTML = "aujourd'hui nous sommes " + day;
 </script>
 
 </body>
 </html>
+
+<!-----------------------------------------------------------------------CORRECTION-------------------------------------------------------------------------- -->
+
+<script>
+  var day = 3;
+  switch (day) {
+      case 1:
+          alert('lundi');
+      break;
+      case 2:
+          alert('mardi');
+      break;
+      case 3:
+          alert('mercredi');
+      break;
+      case 4:
+          alert('jeudi');
+      break;
+      case 5:
+          alert('vendredi');
+      break;
+      case 6:
+          alert('samedi');
+      break;
+      case 7:
+          alert('dimanche');
+      break;
+      default:
+          alert('Cette valeur n\'est pas correcte');
+      break;
+  }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+</head>
+    <body>
+    <form>
+    <fieldset>
+        <legend>Formulaire</legend>
+            <label for="lastname">Nom</label>
+            <input type="text" id="name" name="Name" onmousemove="bigFoot()" onmouseout="noFocus()" />
+            <label for="firstname">Prénom</label>
+            <input type="text" id="surname" name="Surname" onmousemove="bigFoot()" onmouseout="noFocus()" />
+    </fieldset>
+    </form>
+        <script>
+            function bigFoot() {
+                document.getElementById('surname').style.border = 'black 10px solid';
+                document.getElementById('name').style.border = 'black 10px solid';
+            }
+            function noFocus() {
+                document.getElementById('surname').style.border = 'black 1px solid';
+                document.getElementById('name').style.border = 'black 1px solid';
+            }
+        </script>
+    </body>
+</html>

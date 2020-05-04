@@ -2,7 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <script>
+</head>
+<body>
+<input id="nbr1"> + <input id="nbr2"><button onclick="somme()">Calculer la somme</button> = <input id="sum">
+
+ <script>
         function somme(){
             var nbr1, nbr2, sum;
             nbr1 = Number(document.getElementById("nbr1").value);
@@ -11,11 +15,5 @@
             document.getElementById("sum").value = sum;
         }
     </script>
-</head>
-<body>
-    <input id="nbr1"> + <input id="nbr2">
-    <button onclick="somme()">Calculer la somme</button>
-    = <input id="sum">&&
-<script type="text/javascript" src="../javaScript/partie 1/assets/js/exercice1.js"></script>
-</body>
+    </body>
 </html>

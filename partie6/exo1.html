@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+    for (let i = 2020; i <= 2030; i++) {
+        if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0)) {
+            var year = document.createElement("div");
+            year.innerHTML = i;
+            year.style.color = "red";
+            document.body.appendChild(year);
+        } else {
+            var year = document.createElement("div");
+            year.innerHTML = i;
+            document.body.appendChild(year);
+            }
+}
+        </script>
+    </body>
+
+</html>

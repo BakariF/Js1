@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head> 
     <meta charset="UTF-8"/>
     </head>
         <body>
            <script>
-               var first, number2 = 18, result;
-               first= prompt('quel âge as-tu')
-            result = first >= number2;
-            confirm(result)
-            
+               var age = prompt('quel âge as-tu');
+               if ((age >= 18) && (age < 130)){ /* ici pour limiter l'âge après 130 */
+                alert('Vous êtes majeur');
+                }else if ((age < 18) (age >= 0)) {   /*  permet que le code ne répond pas à aux lettres et aux décimales  */
+                    alert('Vous êtes mineur');
+                }else {
+                    alert('Ceci n\'est pas un âge valide')
+                }
            </script> 
-        <script type="text/javascript" src="../partie2/assets/js/exercice2.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+</head>
+    <body>
+    <form id="gneu">
+        <fieldset>
+            <legend>Formulaire</legend>
+            <label for="firstName">Nom</label>
+            <input type="text" name="firstName" id="name" placeholder="Nom"  />
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Age"  />
+            <button onclick="double()">Try it</button>
+        </fieldset>
+    </form>
+        <script>
+        function double() {
+  var item = document.getElementsByTagName('gneu')[0];
+  var cln = item.cloneNode(true);
+  document.getElementById("gneu").appendChild(cln);;
+}
+        </script>
+    </body>
+</html>
